@@ -4,6 +4,7 @@ body{
 }
 a{
 	text-decoration: none;
+	color:black;
 }
 a:visited{
 	color:black;
@@ -68,7 +69,15 @@ a:visited{
 	width: 30%;
 	margin-left: 10px;
 	margin-right: 10px;
+	position: relative;
+	transition: 0.5s;
 }
+
+.project-sample:hover{
+	filter: grayscale(100%);
+	transition: 0.5s;
+}
+
 
 .project-sample_img{
 	width: 100%;
