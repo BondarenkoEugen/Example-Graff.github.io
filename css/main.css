@@ -11,9 +11,10 @@ a:visited{
 }
 
 .header{
-	background: center  url(../img/header-wall-papper.jpg) no-repeat;
+	background: url(../img/header-wall-papper.jpg) no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center center;
 	color: black;
 	padding-top: 100px;
 	height: 100vh;
@@ -63,22 +64,32 @@ a:visited{
 	width: 90%;
 	margin: auto;
 	margin-top: 120px;
+	font-size: 25px;
 }
 
 .project-sample{
-	width: 30%;
-	margin-left: 10px;
-	margin-right: 10px;
+	position: relative;
+	width: 28%;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 40px;
 	position: relative;
 	transition: 0.5s;
 }
-
-.project-sample:hover{
-	filter: grayscale(100%);
-	transition: 0.5s;
+.project-sample_hovered{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 4px;
+	right: 0;
+	color: white;
+	background-color: rgba(0, 0, 0, .5);
+	padding-top: 25%;
+	display: none;
 }
-
-
+.project-sample:hover .project-sample_hovered{
+	display: block;
+}
 .project-sample_img{
 	width: 100%;
 }
@@ -87,6 +98,7 @@ a:visited{
 	margin-top: 150px;
 	background: url(../img/куфвн.png) no-repeat ;
 	background-size: cover;
+	background-position: center center;
 	background-attachment: fixed;
 	padding-top: 100px;
 	height: 500px;
@@ -111,6 +123,7 @@ a:visited{
 	background: url(../img/station-101.jpg) no-repeat ;
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center center;
 	padding-top: 100px;
 	height: 700px;
 	margin-top: 150px;
